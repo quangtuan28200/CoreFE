@@ -1,0 +1,23 @@
+// Abstract files
+@import "abstracts/variables";
+@import "abstracts/mixin";
+
+// Core files
+@import "core/reset";
+@import "core/typography";
+
+// Components
+@import "components/button";
+
+// Layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/responsive"
+
+// Sections
+
+// Pages
+
+// sass ./assets/scss/app.scss ./assets/css/app.css --watch
