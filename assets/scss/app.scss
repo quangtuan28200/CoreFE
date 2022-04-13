@@ -8,15 +8,18 @@
 
 // Components
 @import "components/button";
+@import "components/section";
 
 // Layout
 @import "layout/grid";
 @import "layout/header";
 @import "layout/nav";
 @import "layout/footer";
-@import "layout/responsive"
+@import "layout/responsive";
 
 // Sections
+@import "sections/info";
+@import "sections/content";
 
 // Pages
 

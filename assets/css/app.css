@@ -75,10 +75,33 @@ table {
 }
 
 body {
-  line-height: 1;
+  background-color: #000;
+  line-height: 1.6;
   font-size: 16px;
-  font-family: "Rubik", sans-serif;
-  color: #4F5665;
+  font-family: "Bitter", serif;
+  color: #FFF;
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 4px 20px;
+  color: #FFF;
+  border: 1px solid #000;
+}
+.btn-signIn {
+  background-color: #000;
+}
+.btn-join {
+  color: #000;
+  background-color: transparent;
+}
+
+.section_heading {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .wrapper {
@@ -87,7 +110,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -308,5 +331,60 @@ body {
   }
 }
 /*Smart phone nhỏ*/
+header {
+  background-color: #B11226;
+}
+
+.header_container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+.header_btnWr {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+.info_heading {
+  font-size: 55px;
+  font-weight: 400;
+}
+.info_content {
+  font-size: 20px;
+  font-weight: 700;
+  width: 550px;
+  padding-left: 15px;
+}
 
 /*# sourceMappingURL=app.css.map */
