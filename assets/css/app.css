@@ -76,9 +76,33 @@ table {
 
 body {
   line-height: 1;
-  font-size: 16px;
-  font-family: "Rubik", sans-serif;
-  color: #4F5665;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #3d2514;
+}
+
+section {
+  padding: 78px 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-bl {
+  display: inline-block;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+.aligt-item-center {
+  align-items: center;
 }
 
 .wrapper {
@@ -87,7 +111,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1330px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -308,5 +332,144 @@ body {
   }
 }
 /*Smart phone nhỏ*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+}
+
+.header_wrap {
+  padding-top: 54px;
+}
+.header_top .delivery icon {
+  width: 41px;
+}
+.header_top .delivery p {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+.header_nav {
+  padding-top: 8px;
+}
+.header_nav a {
+  font-size: 15px;
+  margin-left: 58px;
+  font-weight: 700;
+}
+
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+.home {
+  background-image: linear-gradient(54deg, rgba(255, 192, 69, 0.8), rgba(255, 192, 69, 0.9)), url("../imgs/Rectangle.png");
+  padding-top: 213px;
+}
+.home_title-top {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  text-transform: uppercase;
+  border: 1px dashed;
+  display: inline-block;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+.home_title-mid {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 90px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  text-shadow: 4px 5px 0 #fee8bc;
+}
+.home_title-end {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 44px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 4px 5px 0 #fee8bc;
+}
+.home_img {
+  display: flex;
+  position: relative;
+}
+.home_img-top {
+  width: 304px;
+  z-index: 1;
+  position: absolute;
+  bottom: 132px;
+  left: 0;
+}
+.home_img-mid {
+  width: 425px;
+  z-index: 2;
+  position: absolute;
+  bottom: 39px;
+  left: 128px;
+}
+.home_img-end {
+  width: 172px;
+  z-index: 1;
+  margin-left: 448px;
+  margin-bottom: 54px;
+}
+.home_img-price {
+  z-index: 3;
+  width: 174px;
+  height: 174px;
+  background-color: #bf2222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  padding: 10px;
+}
+.home_img-price .price-wrap {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_img-price .price-wrap p {
+  font-size: 60px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.home_img-price .price-wrap p span {
+  font-size: 30px;
+}
+.home_img-price .price-wrap .text {
+  font-size: 44px;
+}
 
 /*# sourceMappingURL=app.css.map */

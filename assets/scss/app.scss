@@ -5,6 +5,7 @@
 // Core files
 @import "core/reset";
 @import "core/typography";
+@import "core/common";
 
 // Components
 @import "components/button";
@@ -12,11 +13,11 @@
 // Layout
 @import "layout/grid";
 @import "layout/header";
-@import "layout/nav";
 @import "layout/footer";
-@import "layout/responsive"
+@import "layout/responsive";
 
 // Sections
+@import "sections/home"
 
 // Pages
 

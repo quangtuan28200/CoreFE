@@ -1,0 +1,36 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+}
+
+.header{
+    &_wrap{
+        padding-top: 54px;
+
+    }
+
+    &_top{
+        & .delivery{
+            icon{
+                width: 41px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 700;
+                padding-left: 20px;
+            }
+        }
+
+    }
+    &_nav{
+        padding-top: 8px;
+        a{
+            font-size: 15px;
+            margin-left: 58px;
+            font-weight: 700;
+        }
+    }
+}

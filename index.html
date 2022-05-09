@@ -9,7 +9,8 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
@@ -19,29 +20,71 @@
     <div class="wrapper">
         <!-- HEADER -->
         <header>
+            <div class="container">
+                <div class="header_wrap">
+                    <div class="header_top d-flex justify-content-sb aligt-item-center">
+                        <div class="logo">
+                            <a href="#home">
+                                <img src="./assets/imgs/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="delivery d-flex aligt-item-center">
+                            <i class="fa-light fa-moped"></i>
+                            <p>Express Delivery +1 234 567 890</p>
+                        </div>
+                    </div>
 
+                    <div class="header_nav">
+                        <ul class="d-flex justify-content-end">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">MENU</a></li>
+                            <li><a href="#">OUR STORY</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!-- CONTENT -->
         <main>
-            <!-- SECTION_A -->
-            <section class="a">
+            <!-- SECTION_HOME -->
+            <section class="home">
                 <div class="container">
-                    <div class="a_container">
-                        <ul class="row">
-                            <li class="col l-3 m-6 s-12">
-                                <div style="background-color: black; height: 200px;"></div>
-                            </li>
-                            <li class="col l-3 m-6 s-12">
-                                <div style="background-color: black; height: 200px;"></div>
-                            </li>
-                            <li class="col l-3 m-6 s-12">
-                                <div style="background-color: black; height: 200px;"></div>
-                            </li>
-                            <li class="col l-3 m-6 s-12">
-                                <div style="background-color: black; height: 200px;"></div>
-                            </li>
-                        </ul>
+                    <div class="home_container">
+                        <div class="row">
+                            <!-- title -->
+                            <div class="home_title col l-6">
+                                <div class="home_title-top">
+                                    <p>It is a good time for the great taste of burgers</p>
+                                </div>
+                                <div class="home_title-mid">
+                                    <p>Burger</p>
+                                </div>
+                                <div class="home_title-end">
+                                    <p>Week</p>
+                                </div>
+                            </div>
+
+                            <!-- img -->
+                            <div class="home_img col l-6">
+                                <div class="home_img-top">
+                                    <img src="./assets/imgs/French_Fries.png" alt="img">
+                                </div>
+                                <div class="home_img-mid">
+                                    <img src="./assets/imgs/Burger_Image.png" alt="img">
+                                </div>
+                                <div class="home_img-end">
+                                    <img src="./assets/imgs/Drinks.png" alt="img">
+                                </div>
+                                <div class="home_img-price">
+                                    <div class="price-wrap">
+                                        <p class="price">$5<span>.49</span></p>
+                                        <p class="text">Only</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
