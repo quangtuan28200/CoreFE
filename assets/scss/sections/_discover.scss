@@ -1,0 +1,32 @@
+#discover{
+    margin-top: 50px;
+}
+
+.discover{
+    &_container{
+        box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+    }
+    &_wrap{
+        padding: 25px;
+    }
+    &_title{
+        margin-bottom: 40px;
+        p{
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            display: grid;
+            span{
+                font-family: "Alfa Slab One";
+                font-weight: 400;
+                font-size: 34px;
+                text-transform: uppercase;
+                margin-top: 8px;
+            }
+        }
+    }
+    &_des{
+        font-size: 18px;
+        line-height: 33.33px;
+    }
+}

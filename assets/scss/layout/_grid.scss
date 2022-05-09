@@ -21,6 +21,15 @@
     padding-right: 15px;
 }
 
+.row.gutter-2{
+    margin-left: -20px;
+    margin-right: -20px;
+    .col{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .l-0 {
     display: none;
 }

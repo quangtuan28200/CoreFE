@@ -19,7 +19,7 @@
 <body>
     <div class="wrapper">
         <!-- HEADER -->
-        <header>
+        <header id="header">
             <div class="container">
                 <div class="header_wrap">
                     <div class="header_top d-flex justify-content-sb aligt-item-center">
@@ -29,7 +29,7 @@
                             </a>
                         </div>
                         <div class="delivery d-flex aligt-item-center">
-                            <i class="fa-light fa-moped"></i>
+                            <img src="./assets/imgs/delivery-man.png" alt="">
                             <p>Express Delivery +1 234 567 890</p>
                         </div>
                     </div>
@@ -37,9 +37,9 @@
                     <div class="header_nav">
                         <ul class="d-flex justify-content-end">
                             <li><a href="#">HOME</a></li>
-                            <li><a href="#">MENU</a></li>
-                            <li><a href="#">OUR STORY</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#menu">MENU</a></li>
+                            <li><a href="#discover">OUR STORY</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,40 +49,198 @@
         <!-- CONTENT -->
         <main>
             <!-- SECTION_HOME -->
-            <section class="home">
+            <section id="home">
                 <div class="container">
-                    <div class="home_container">
-                        <div class="row">
-                            <!-- title -->
-                            <div class="home_title col l-6">
-                                <div class="home_title-top">
-                                    <p>It is a good time for the great taste of burgers</p>
+                    <div class="home_container row">
+                        <!-- title -->
+                        <div class="home_title col l-6">
+                            <div class="home_title-top">
+                                <p>It is a good time for the great taste of burgers</p>
+                            </div>
+                            <div class="home_title-mid">
+                                <p>Burger</p>
+                            </div>
+                            <div class="home_title-end">
+                                <p>Week</p>
+                            </div>
+                        </div>
+
+                        <!-- img -->
+                        <div class="home_img col l-6">
+                            <div class="home_img-top">
+                                <img src="./assets/imgs/French_Fries.png" alt="img">
+                            </div>
+                            <div class="home_img-mid">
+                                <img src="./assets/imgs/Burger_Image.png" alt="img">
+                            </div>
+                            <div class="home_img-end">
+                                <img src="./assets/imgs/Drinks.png" alt="img">
+                            </div>
+                            <div class="home_img-price">
+                                <div class="price-wrap">
+                                    <p class="price">$5<span>.49</span></p>
+                                    <p class="text">Only</p>
                                 </div>
-                                <div class="home_title-mid">
-                                    <p>Burger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION_MENU -->
+            <section id="menu">
+                <div class="container">
+                    <div class="menu_container">
+                        <!-- menu img -->
+                        <div class="menu_img">
+                            <div class="row">
+                                <!-- img-left -->
+                                <div class="menu_img-left col l-6">
+                                    <a href="#" class="img_left-wrap">
+                                        <img src="./assets/imgs/Burger_Image (1).png" alt="img">
+                                        <div class="menu_img-title">
+                                            <p>Try it today<span> Most Popular Burger</span></p>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="home_title-end">
-                                    <p>Week</p>
+        
+                                <!-- img-right -->
+                                <div class="menu_img-right col l-6">
+                                    <a href="#" class="img-rightTop">
+                                        <img src="./assets/imgs/Image.png" alt="img">
+                                        <div class="menu_img-title">
+                                            <p>Try it today<span style="width: 60%;"> More fun more taste</span></p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="img-rightBottom">
+                                        <img src="./assets/imgs/Image (1).png" alt="img">
+                                        <div class="menu_img-title">
+                                            <p>Try it today<span> Fresh & Chili</span></p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
-                            <!-- img -->
-                            <div class="home_img col l-6">
-                                <div class="home_img-top">
-                                    <img src="./assets/imgs/French_Fries.png" alt="img">
+                            <a href="#" class="menu_btn">
+                                <p>Always Tasty Burger</p>
+                            </a>
+                        </div>
+
+                        <!-- order -->
+                        <div class="menu_order">
+                            <!-- title -->
+                            <div class="menu_orderTitle">
+                                <p>Choose & Enjoy</p>
+                            </div>
+                            <!-- description -->
+                            <div class="menu_orderDes">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+
+                            <!-- buger card -->
+                            <div class="menu_orderBurger">
+                                <ul class="row gutter-2">
+                                    <li class="col l-4">
+                                        <div class="burger_img">
+                                            <img src="./assets/imgs/Burger.png" alt="burger">
+                                        </div>
+                                        <div class="burger_title">
+                                            <p>Lorem ipsum dolor</p>
+                                        </div>
+                                        <div class="burger_des">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                        </div>
+                                        <a href class="burger_btn">
+                                            <p>Order Now</p>
+                                        </a>               
+                                    </li>
+                                    <li class="col l-4">
+                                        <div class="burger_img">
+                                            <img src="./assets/imgs/Burger_Image.png" alt="burger">
+                                        </div>
+                                        <div class="burger_title">
+                                            <p>Lorem ipsum dolor</p>
+                                        </div>
+                                        <div class="burger_des">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                        </div>
+                                        <a href class="burger_btn">
+                                            <p>Order Now</p>
+                                        </a>               
+                                    </li>
+                                    <li class="col l-4">
+                                        <div class="burger_img">
+                                            <img src="./assets/imgs/Burger.png" alt="burger">
+                                        </div>
+                                        <div class="burger_title">
+                                            <p>Lorem ipsum dolor</p>
+                                        </div>
+                                        <div class="burger_des">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                        </div>
+                                        <a href class="burger_btn">
+                                            <p>Order Now</p>
+                                        </a>               
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- SECTION_DISCOVER -->
+            <section id="discover">
+                <div class="container">
+                    <div class="discover_container">
+                        <div class="discover_wrap row">
+                            <div class="discover_left col l-6">
+                                <div class="discover_title">
+                                    <p>Discover <span>Upcoming Events</span> </p>
                                 </div>
-                                <div class="home_img-mid">
-                                    <img src="./assets/imgs/Burger_Image.png" alt="img">
+                                <div class="discover_des">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                                 </div>
-                                <div class="home_img-end">
-                                    <img src="./assets/imgs/Drinks.png" alt="img">
-                                </div>
-                                <div class="home_img-price">
-                                    <div class="price-wrap">
-                                        <p class="price">$5<span>.49</span></p>
-                                        <p class="text">Only</p>
-                                    </div>
-                                </div>
+                            </div>
+
+                            <div class="discover_right col l-6">
+                                <img src="./assets/imgs/Food Image.psb.png" alt="discover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION_CONTACT -->
+            <section id="contact">
+                <div class="container">
+                    <div class="contact_container">
+                        <div class="contact_subTitle">
+                            <p>Reservation</p>
+                        </div>
+                        <div class="contact_title">
+                            <p>Book your table</p>
+                        </div>
+                        <div class="contact_formWr">
+                            <div class="img_left">
+                                <img src="./assets/imgs/Bottle.psb.png" alt="img">
+                            </div>
+
+                            <form action="">
+                                <ul class="row">
+                                    <li class="col l-6">
+                                        <input type="text" placeholder="name">   
+                                        <input type="text" placeholder="email">   
+                                        <input type="text" placeholder="date">   
+                                        <input type="text" placeholder="time">   
+                                        <input type="text" placeholder="people">   
+                                        <input type="submit" value="find a table">
+                                    </li>
+                                </ul>
+                            </form>
+
+                            <div class="img_right">
+                                <img src="./assets/imgs/Image2.psb.png" alt="img">
                             </div>
                         </div>
                     </div>

@@ -1,14 +1,16 @@
-.home{
+#home{
     background-image: linear-gradient(54deg, rgba(255, 192, 69, .8), rgba(255, 192, 69, .9)), url("../imgs/Rectangle.png");
     padding-top: 213px;
+}
 
+.home{
     &_title{
         &-top{
             font-size: 18px;
             font-weight: 700;
             padding: 15px;
             text-transform: uppercase;
-            border: 1px dashed;
+            border: 2px dashed $primary-color;
             display: inline-block;
             margin-bottom: 24px;
             letter-spacing: -1px;
@@ -50,7 +52,7 @@
         &-end{
             width: 172px;
             z-index: 1;
-            margin-left: 448px;
+            margin-left: 410px;
             margin-bottom: 54px;
         }
         &-price{
@@ -67,7 +69,7 @@
             .price-wrap{
                 width: 100%;
                 height: 100%;
-                border: 1px dashed white;
+                border: 2px dashed white;
                 border-radius: 50%;
                 display: flex;
                 flex-direction: column;

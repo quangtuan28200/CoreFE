@@ -8,29 +8,35 @@ header{
 
 .header{
     &_wrap{
-        padding-top: 54px;
-
+        padding-top: 50px;
     }
 
     &_top{
         & .delivery{
-            icon{
+            img{
                 width: 41px;
             }
             p{
-                font-size: 18px;
                 font-weight: 700;
-                padding-left: 20px;
+                padding-left: 10px;
             }
         }
 
     }
     &_nav{
-        padding-top: 8px;
-        a{
-            font-size: 15px;
-            margin-left: 58px;
-            font-weight: 700;
+        ul{
+            li{
+                a{
+                    font-weight: 700;
+                    padding: 10px 25px;
+                }
+
+                &:last-child{
+                    a{
+                        padding-right: 0;
+                    }
+                }
+            }
         }
     }
 }

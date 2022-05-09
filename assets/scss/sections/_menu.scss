@@ -1,0 +1,134 @@
+.menu{
+    &_img{
+        padding: 85px 50px;
+        padding-bottom: 0;
+        img{
+            border-radius: 8px;
+        }
+
+        .img_left-wrap, .img-rightTop, .img-rightBottom{
+            position: relative;
+        }
+
+        &-title{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            p{
+                display: grid;
+                font-size: 16px;
+                color: white;
+                font-weight: 400;
+                text-transform: uppercase;
+
+                span{
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        &-left{
+            img{
+                width: 100%;
+                height: 420px;
+                object-fit: cover;
+            }
+        }
+    
+        &-right{
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            
+            img{
+                height: 192px;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+
+    &_btn{
+        display: flex;
+        justify-content: center;
+        p{
+            display: inline-block;
+            padding: 14px 22px;
+            background-color: $primary-colorLight;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-top: 70px;
+        }
+    }
+
+    &_order{
+        &Title{
+            p{
+                font-family: "Alfa Slab One";
+                font-size: 40px;
+                text-transform: uppercase;
+                text-align: center;
+                margin: 40px 0;
+            }
+        }
+
+        &Des{
+            display: flex;
+            justify-content: center;
+            p{
+                width: 1055px;
+                text-align: center;
+                line-height: 1.4;
+                font-size: 18px;
+                margin-bottom: 65px;    
+            }
+        }
+
+        &Burger{
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .burger{
+                    &_img{
+                        margin-bottom: 71px;
+                        img{
+                            height: 271px;
+                            object-fit: contain;
+                        }
+                    }
+                    &_title{
+                        p{
+                            font-size: 28px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            margin-bottom: 23px;
+                        }
+                    }
+                    &_des{
+                        p{
+                            font-size: 18px;
+                            text-align: center;
+                            margin-bottom: 36px;
+                        }
+                    }
+                    &_btn{
+                        p{
+                            font-family: "Alfa Slab One";
+                            text-transform: uppercase;
+                            color: white;
+                            padding: 22px 38px;
+                            background-color: #bf2222;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

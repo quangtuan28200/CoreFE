@@ -76,13 +76,13 @@ table {
 
 body {
   line-height: 1;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #3d2514;
 }
 
 section {
-  padding: 78px 0;
+  padding-bottom: 80px;
 }
 
 .d-flex {
@@ -126,6 +126,15 @@ section {
 .col {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.row.gutter-2 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.row.gutter-2 .col {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .l-0 {
@@ -341,23 +350,21 @@ header {
 }
 
 .header_wrap {
-  padding-top: 54px;
+  padding-top: 50px;
 }
-.header_top .delivery icon {
+.header_top .delivery img {
   width: 41px;
 }
 .header_top .delivery p {
-  font-size: 18px;
   font-weight: 700;
-  padding-left: 20px;
+  padding-left: 10px;
 }
-.header_nav {
-  padding-top: 8px;
-}
-.header_nav a {
-  font-size: 15px;
-  margin-left: 58px;
+.header_nav ul li a {
   font-weight: 700;
+  padding: 10px 25px;
+}
+.header_nav ul li:last-child a {
+  padding-right: 0;
 }
 
 /*Ipad ngang(1024 x 768)*/
@@ -385,16 +392,17 @@ header {
 /*Tablet nhỏ(480 x 640)*/
 /*Iphone(480 x 640)*/
 /*Smart phone nhỏ*/
-.home {
+#home {
   background-image: linear-gradient(54deg, rgba(255, 192, 69, 0.8), rgba(255, 192, 69, 0.9)), url("../imgs/Rectangle.png");
   padding-top: 213px;
 }
+
 .home_title-top {
   font-size: 18px;
   font-weight: 700;
   padding: 15px;
   text-transform: uppercase;
-  border: 1px dashed;
+  border: 2px dashed #3d2514;
   display: inline-block;
   margin-bottom: 24px;
   letter-spacing: -1px;
@@ -435,7 +443,7 @@ header {
 .home_img-end {
   width: 172px;
   z-index: 1;
-  margin-left: 448px;
+  margin-left: 410px;
   margin-bottom: 54px;
 }
 .home_img-price {
@@ -452,7 +460,7 @@ header {
 .home_img-price .price-wrap {
   width: 100%;
   height: 100%;
-  border: 1px dashed white;
+  border: 2px dashed white;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -470,6 +478,173 @@ header {
 }
 .home_img-price .price-wrap .text {
   font-size: 44px;
+}
+
+.menu_img {
+  padding: 85px 50px;
+  padding-bottom: 0;
+}
+.menu_img img {
+  border-radius: 8px;
+}
+.menu_img .img_left-wrap, .menu_img .img-rightTop, .menu_img .img-rightBottom {
+  position: relative;
+}
+.menu_img-title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.menu_img-title p {
+  display: grid;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.menu_img-title p span {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.menu_img-left img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+.menu_img-right {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_img-right img {
+  height: 192px;
+  object-fit: cover;
+  width: 100%;
+}
+.menu_btn {
+  display: flex;
+  justify-content: center;
+}
+.menu_btn p {
+  display: inline-block;
+  padding: 14px 22px;
+  background-color: #ffc045;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-top: 70px;
+}
+.menu_orderTitle p {
+  font-family: "Alfa Slab One";
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0;
+}
+.menu_orderDes {
+  display: flex;
+  justify-content: center;
+}
+.menu_orderDes p {
+  width: 1055px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  margin-bottom: 65px;
+}
+.menu_orderBurger li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_orderBurger li .burger_img {
+  margin-bottom: 71px;
+}
+.menu_orderBurger li .burger_img img {
+  height: 271px;
+  object-fit: contain;
+}
+.menu_orderBurger li .burger_title p {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+.menu_orderBurger li .burger_des p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.menu_orderBurger li .burger_btn p {
+  font-family: "Alfa Slab One";
+  text-transform: uppercase;
+  color: white;
+  padding: 22px 38px;
+  background-color: #bf2222;
+  display: inline-block;
+}
+
+#discover {
+  margin-top: 50px;
+}
+
+.discover_container {
+  box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+}
+.discover_wrap {
+  padding: 25px;
+}
+.discover_title {
+  margin-bottom: 40px;
+}
+.discover_title p {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: grid;
+}
+.discover_title p span {
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+.discover_des {
+  font-size: 18px;
+  line-height: 33.33px;
+}
+
+.contact_subTitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.contact_title {
+  font-family: "Alfa Slab One";
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.contact_formWr {
+  display: flex;
+  overflow: hidden;
+}
+.contact_formWr .img_left {
+  padding: 0 90px;
+}
+.contact_formWr .img_left img {
+  height: 267px;
+  object-fit: contain;
+}
+.contact_formWr .img_right img {
+  height: 400px;
+  transform: translateX(40%);
 }
 
 /*# sourceMappingURL=app.css.map */
