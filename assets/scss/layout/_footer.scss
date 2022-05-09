@@ -1,0 +1,91 @@
+footer{
+    background-image: url("../imgs/Layer.psb.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    &_container{
+        color: white;
+    }
+
+    &_content{
+        padding-top: 84px;
+        padding-bottom: 172px;
+    }
+
+    &_left{
+        img{
+            width: 410px;
+            margin-bottom: 48px;
+        }
+    }
+
+    &_des{
+        line-height: 25px;
+        width: 460px;
+    }
+
+    &_right{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        &Wr{
+            display: inline-block;
+        }
+
+        &Icon{
+            height: 24px;
+            width: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i{
+                font-size: 22px;
+            }
+        }
+        .address, .email{
+            display: flex;
+            align-items: center;
+            margin-top: 18px;
+            p{
+                text-transform: uppercase;
+                margin-left: 28px;
+            }
+        }
+    }
+
+    &_end{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 22px;
+        .coppyright{
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .social{
+            display: flex;
+            &_icon{
+                margin-left: 12px;
+                a{
+                    height: 30px;
+                    width: 30px;
+                    background-color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i{
+                        color: $primary-color;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+}

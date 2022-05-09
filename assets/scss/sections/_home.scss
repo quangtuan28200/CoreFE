@@ -36,21 +36,27 @@
         display: flex;
         position: relative;
         &-top{
-            width: 304px;
             z-index: 1;
             position: absolute;
             bottom: 132px;
             left: 0;
+            img{
+                width: 304px;
+            }
         }
         &-mid{
-            width: 425px;
+            img{
+                width: 425px;
+            }
             z-index: 2;
             position: absolute;
             bottom: 39px;
             left: 128px;
         }
         &-end{
-            width: 172px;
+            img{
+                width: 172px;
+            }
             z-index: 1;
             margin-left: 410px;
             margin-bottom: 54px;
