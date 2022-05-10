@@ -5,12 +5,41 @@
 .discover{
     &_container{
         box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+        overflow: hidden;
+        position: relative;
     }
-    &_wrap{
-        padding: 25px;
+
+    &_slider{
+        display: flex;
+        width: 300%;
+        // margin-left: -100%;
+        position: relative;
+        li{
+            padding: 25px;
+        }
     }
+
+    &_dot{
+        display: flex;
+        position: absolute;
+        bottom: 60px;
+        left: 56px;
+        .dot{
+            width: 18px;
+            height: 18px;
+            background-color: #dcdcdc;
+            border-radius: 50%;
+            margin-right: 8px;
+            transition: .2s;
+            .active{
+                background-color: #ffc045;
+            }
+        }
+    }
+
     &_title{
         margin-bottom: 40px;
+        margin-left: 31px;
         p{
             font-size: 20px;
             text-transform: uppercase;
@@ -25,9 +54,11 @@
             }
         }
     }
+
     &_des{
         font-size: 18px;
         line-height: 33.33px;
+        margin-left: 31px;
     }
     &_right{
         img{

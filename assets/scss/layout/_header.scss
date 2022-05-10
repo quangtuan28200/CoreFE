@@ -4,11 +4,19 @@ header{
     left: 0;
     right: 0;
     z-index: 101;
+    transition: .4s;
+    padding-top: 50px;
+    &.active{
+        background-color: rgba(#fff, .8);
+    }
 }
 
 .header{
     &_wrap{
-        padding-top: 50px;
+        transition: .4s;
+        &.active{
+            transform: translateY(-10px);            
+        }
     }
 
     &_top{

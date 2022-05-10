@@ -100,8 +100,30 @@ section {
   justify-content: space-between;
 }
 
-.aligt-item-center {
+.align-item-center {
   align-items: center;
+}
+
+.align-item-start {
+  align-items: flex-start;
+}
+
+.shadow {
+  width: 90%;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0px 68px 14px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.shadow.white {
+  width: 80%;
+  height: 60%;
+  top: 136px;
+  box-shadow: 0px -130px 150px rgba(255, 255, 255, 0.45);
 }
 
 .wrapper {
@@ -346,10 +368,18 @@ header {
   left: 0;
   right: 0;
   z-index: 101;
+  transition: 0.4s;
+  padding-top: 50px;
+}
+header.active {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header_wrap {
-  padding-top: 50px;
+  transition: 0.4s;
+}
+.header_wrap.active {
+  transform: translateY(-10px);
 }
 .header_top .delivery img {
   width: 41px;
@@ -366,21 +396,19 @@ header {
   padding-right: 0;
 }
 
-footer {
+.footer_container {
+  color: white;
   background-image: url("../imgs/Layer.psb.png");
   background-size: cover;
   background-position: center;
-}
-
-.footer_container {
-  color: white;
+  padding: 0 40px;
+  background-color: rgba(0, 0, 0, 0.99);
 }
 .footer_content {
   padding-top: 84px;
   padding-bottom: 172px;
 }
 .footer_left img {
-  width: 410px;
   margin-bottom: 48px;
 }
 .footer_des {
@@ -470,7 +498,8 @@ footer {
 /*Iphone(480 x 640)*/
 /*Smart phone nhỏ*/
 #home {
-  background-image: linear-gradient(54deg, rgba(255, 192, 69, 0.8), rgba(255, 192, 69, 0.9)), url("../imgs/Rectangle.png");
+  background: linear-gradient(rgba(255, 192, 69, 0.9), rgba(255, 192, 69, 0.9)), url("../imgs/Rectangle.png");
+  background-position: center;
   padding-top: 213px;
 }
 
@@ -482,6 +511,7 @@ footer {
   border: 2px dashed #3d2514;
   display: inline-block;
   margin-bottom: 24px;
+  margin-top: 75px;
   letter-spacing: -1px;
 }
 .home_title-mid {
@@ -523,7 +553,8 @@ footer {
 }
 .home_img-end {
   z-index: 1;
-  margin-left: 410px;
+  position: relative;
+  margin-left: 446px;
   margin-bottom: 54px;
 }
 .home_img-end img {
@@ -644,6 +675,7 @@ footer {
 }
 .menu_orderBurger li .burger_img {
   margin-bottom: 71px;
+  position: relative;
 }
 .menu_orderBurger li .burger_img img {
   height: 271px;
@@ -675,12 +707,37 @@ footer {
 
 .discover_container {
   box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+  position: relative;
 }
-.discover_wrap {
+.discover_slider {
+  display: flex;
+  width: 300%;
+  position: relative;
+}
+.discover_slider li {
   padding: 25px;
+}
+.discover_dot {
+  display: flex;
+  position: absolute;
+  bottom: 60px;
+  left: 56px;
+}
+.discover_dot .dot {
+  width: 18px;
+  height: 18px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: 0.2s;
+}
+.discover_dot .dot .active {
+  background-color: #ffc045;
 }
 .discover_title {
   margin-bottom: 40px;
+  margin-left: 31px;
 }
 .discover_title p {
   font-size: 20px;
@@ -698,6 +755,7 @@ footer {
 .discover_des {
   font-size: 18px;
   line-height: 33.33px;
+  margin-left: 31px;
 }
 .discover_right img {
   width: 100%;
@@ -723,6 +781,7 @@ footer {
 .contact_header > img {
   width: 213px;
   transform: translateX(-90px);
+  filter: drop-shadow(50px 50px 50px rgba(0, 0, 0, 0.3));
 }
 .contact_heading {
   position: absolute;
@@ -750,6 +809,7 @@ footer {
 .contact_content .img_left img {
   height: 267px;
   object-fit: contain;
+  filter: drop-shadow(32px 37px 50px rgba(0, 0, 0, 0.3));
 }
 .contact_content .img_right {
   margin-top: 25px;
@@ -760,6 +820,7 @@ footer {
   width: 397px;
   object-fit: contain;
   transform: rotate(76deg);
+  filter: drop-shadow(4px 0 10px rgba(0, 0, 0, 0.3));
 }
 .contact_form {
   margin-right: -160px;
@@ -791,6 +852,7 @@ footer {
   border-radius: 4px;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,12 +1,11 @@
-footer{
-    background-image: url("../imgs/Layer.psb.png");
-    background-size: cover;
-    background-position: center;
-}
-
 .footer{
     &_container{
         color: white;
+        background-image: url("../imgs/Layer.psb.png");
+        background-size: cover;
+        background-position: center;
+        padding: 0 40px;
+        background-color: rgba(#000000, .99);
     }
 
     &_content{
@@ -16,7 +15,8 @@ footer{
 
     &_left{
         img{
-            width: 410px;
+            // width: 410px;
+            // filter: invert(95%) sepia(0%) saturate(20%) hue-rotate(34deg) brightness(104%) contrast(108%);
             margin-bottom: 48px;
         }
     }
