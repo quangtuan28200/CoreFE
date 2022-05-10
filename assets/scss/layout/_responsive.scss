@@ -4,7 +4,156 @@
 }
 
 @include responsive ('ipad-vertical'){
+    .home{
+        &_title{
+            margin-left: 50px;
+        }
+        &_img{
+            margin-left: 64px;
+        }
+    }
 
+    #menu{
+        padding-bottom: 0;
+    }
+
+    .menu{
+        &_img{
+            padding: 50px 0;
+            padding-bottom: 0;
+
+            &-left, &-right{
+                img{
+                    height: 250px;
+                }
+            }
+
+            &-right{
+                .img-rightTop p span {
+                    width: unset;
+                }
+            }
+
+            &-title{
+                top: 16px;
+                left: 16px;
+                width: 40%;
+                p span{
+                    width: unset;      
+                }
+            }
+
+            a{
+                margin-bottom: 10px;
+            }
+        }
+
+        &_btn{
+            p{
+                margin-top: 36px;
+            }
+        }
+
+        &_orderDes{
+            p{
+                width: 90%;
+            }
+        }
+
+        &_orderBurger{
+            li{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    #discover{
+        margin-top: 0;
+    }
+
+    .discover{
+        &_slider{
+            li{
+                padding: 16px;
+            }
+        }
+
+        &_title{
+            margin-top: 0;
+            margin-left: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        &_des{
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+
+        &_dot{
+            bottom: 40px;
+            left: 40px;
+
+            .dot{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+
+    .contact{
+        &_header{
+            & > img{
+                display: none;
+            }
+        }
+
+        &_heading{
+            position: unset;
+        }
+
+        &_content{
+            .img_left, .img_right{
+                display: none;
+            }
+        }
+
+        &_form{
+            margin-right: 0;
+        }
+    }
+
+    footer{
+        background-image: url(../imgs/Layer.psb.png);
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.99);
+
+        .footer{
+            &_container{
+                background: none;
+                padding: 0;
+            }
+
+            &_des{
+                width: unset;
+            }
+
+            &_left{
+                img{
+                    width: 80%;
+                }
+            }
+
+            &_right{
+                .address, .email{
+                    p{
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include responsive ('ipad-mini'){
@@ -16,5 +165,63 @@
 }
 
 @include responsive ('phone-mini'){
+    .nav{
+        display: block;
+    }
 
+    header{
+        display: none;
+        // &_top{
+        //     .logo{
+        //         img{
+        //             width: 45%;
+        //         }
+        //     }
+        //     .delivery{
+        //         display: none;
+        //     }
+        // }
+
+        // &_nav{
+        //     display: none;
+        // }
+    }
+
+    .menu{
+        &_orderBurger{
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .discover{
+        &_slider{
+            li{
+                padding: 4px;
+            }
+        }
+
+        &_dot{
+            bottom: 10px;
+            left: 10px;
+
+            .dot{
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+
+    footer{
+        .footer{
+            &_end{
+                flex-direction: column-reverse;
+                padding-bottom: 10px;
+                .social{
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
 }

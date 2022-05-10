@@ -5,10 +5,21 @@ jQuery(document).ready(function ($) {
         if (scrollDistance > 0) {
             $("header").addClass("active");
             $(".header_wrap").addClass("active");
+            $(".header_sm").addClass("active");
         } else {
             $("header").removeClass("active");
             $(".header_wrap").removeClass("active");
+            $(".header_sm").removeClass("active");
         }
+    });
+
+    //nav-mobile
+    $(".nav__bg").click(function () {
+        $("#nav__checkbox").prop("checked", false);
+    });
+
+    $(".nav-content ul").click(function () {
+        $("#nav__checkbox").prop("checked", false);
     });
 
     // slider

@@ -9,18 +9,20 @@
 
 // Components
 @import "components/button";
+@import "components/nav";
 
 // Layout
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/responsive";
 
 // Sections
 @import "sections/home";
 @import "sections/menu";
 @import "sections/discover";
 @import "sections/contact";
+
+@import "layout/responsive";
 
 // Pages
 

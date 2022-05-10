@@ -126,6 +126,119 @@ section {
   box-shadow: 0px -130px 150px rgba(255, 255, 255, 0.45);
 }
 
+.nav {
+  display: none;
+}
+.nav input {
+  display: none;
+}
+.nav input:checked ~ .nav__btn .nav__icon {
+  background-color: transparent;
+}
+
+.nav {
+  display: none;
+}
+.nav .header_sm {
+  position: fixed;
+  z-index: 1002;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+.nav .header_sm img {
+  width: 45%;
+}
+.nav .header_sm.active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.nav input {
+  display: none;
+}
+.nav input:checked ~ .header_sm .nav__btn .nav__icon {
+  background-color: transparent;
+}
+.nav input:checked ~ .header_sm .nav__btn .nav__icon::before {
+  top: 0;
+  transform: translate(-50%, 0) rotate(45deg);
+}
+.nav input:checked ~ .header_sm .nav__btn .nav__icon::after {
+  top: 0;
+  transform: translate(-50%, 0) rotate(-45deg);
+}
+.nav input:checked ~ .nav__bg {
+  display: block;
+}
+.nav input:checked ~ .nav-content {
+  left: 0;
+}
+.nav__btn {
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s ease;
+  padding: 0 25px;
+  padding-right: 0;
+}
+.nav__btn .nav__icon,
+.nav__btn .nav__icon::after,
+.nav__btn .nav__icon::before {
+  height: 4px;
+  background-color: #3d2514;
+  width: 24px;
+  display: inline-block;
+  position: absolute;
+  border-radius: 10rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease;
+}
+.nav__btn .nav__icon::before {
+  content: "";
+  top: -100%;
+}
+.nav__btn .nav__icon::after {
+  content: "";
+  top: 200%;
+}
+.nav__bg {
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.nav-content {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 1002;
+  background: rgba(0, 0, 0, 0.8);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+.nav-content ul li a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 10px 22px 10px 15px;
+  width: 100%;
+  font-weight: 700;
+}
+.nav-content ul li a:hover {
+  background-color: black;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -472,31 +585,6 @@ header.active {
   font-size: 18px;
 }
 
-/*Ipad ngang(1024 x 768)*/
-/*Ipad dọc(768 x 1024)*/
-/*Tablet nhỏ(480 x 640)*/
-/*Iphone(480 x 640)*/
-/*Smart phone nhỏ*/
-/*Ipad ngang(1024 x 768)*/
-/*Ipad dọc(768 x 1024)*/
-/*Tablet nhỏ(480 x 640)*/
-/*Iphone(480 x 640)*/
-/*Smart phone nhỏ*/
-/*Ipad ngang(1024 x 768)*/
-/*Ipad dọc(768 x 1024)*/
-/*Tablet nhỏ(480 x 640)*/
-/*Iphone(480 x 640)*/
-/*Smart phone nhỏ*/
-/*Ipad ngang(1024 x 768)*/
-/*Ipad dọc(768 x 1024)*/
-/*Tablet nhỏ(480 x 640)*/
-/*Iphone(480 x 640)*/
-/*Smart phone nhỏ*/
-/*Ipad ngang(1024 x 768)*/
-/*Ipad dọc(768 x 1024)*/
-/*Tablet nhỏ(480 x 640)*/
-/*Iphone(480 x 640)*/
-/*Smart phone nhỏ*/
 #home {
   background: linear-gradient(rgba(255, 192, 69, 0.9), rgba(255, 192, 69, 0.9)), url("../imgs/Rectangle.png");
   background-position: center;
@@ -636,6 +724,9 @@ header.active {
   object-fit: cover;
   width: 100%;
 }
+.menu_img-right .img-rightTop p span {
+  width: 60%;
+}
 .menu_btn {
   display: flex;
   justify-content: center;
@@ -680,6 +771,7 @@ header.active {
 .menu_orderBurger li .burger_img img {
   height: 271px;
   object-fit: contain;
+  width: 100%;
 }
 .menu_orderBurger li .burger_title p {
   font-size: 28px;
@@ -827,7 +919,7 @@ header.active {
 }
 .contact_form li {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 .contact_form label {
   position: absolute;
@@ -885,6 +977,167 @@ header.active {
 }
 .contact_form input[type=date]::-webkit-datetime-edit {
   text-transform: uppercase;
+}
+
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+  .home_title {
+    margin-left: 50px;
+  }
+  .home_img {
+    margin-left: 64px;
+  }
+
+  #menu {
+    padding-bottom: 0;
+  }
+
+  .menu_img {
+    padding: 50px 0;
+    padding-bottom: 0;
+  }
+  .menu_img-left img, .menu_img-right img {
+    height: 250px;
+  }
+  .menu_img-right .img-rightTop p span {
+    width: unset;
+  }
+  .menu_img-title {
+    top: 16px;
+    left: 16px;
+    width: 40%;
+  }
+  .menu_img-title p span {
+    width: unset;
+  }
+  .menu_img a {
+    margin-bottom: 10px;
+  }
+  .menu_btn p {
+    margin-top: 36px;
+  }
+  .menu_orderDes p {
+    width: 90%;
+  }
+  .menu_orderBurger li {
+    margin-bottom: 40px;
+  }
+
+  #discover {
+    margin-top: 0;
+  }
+
+  .discover_slider li {
+    padding: 16px;
+  }
+  .discover_title {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .discover_des {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .discover_dot {
+    bottom: 40px;
+    left: 40px;
+  }
+  .discover_dot .dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .contact_header > img {
+    display: none;
+  }
+  .contact_heading {
+    position: unset;
+  }
+  .contact_content .img_left, .contact_content .img_right {
+    display: none;
+  }
+  .contact_form {
+    margin-right: 0;
+  }
+
+  footer {
+    background-image: url(../imgs/Layer.psb.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.99);
+  }
+  footer .footer_container {
+    background: none;
+    padding: 0;
+  }
+  footer .footer_des {
+    width: unset;
+  }
+  footer .footer_left img {
+    width: 80%;
+  }
+  footer .footer_right .address p, footer .footer_right .email p {
+    margin-left: 8px;
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+@media screen and (max-width: 320px) {
+  .nav {
+    display: block;
+  }
+
+  header {
+    display: none;
+  }
+
+  .menu_orderBurger li {
+    margin-bottom: 10px;
+  }
+
+  .discover_slider li {
+    padding: 4px;
+  }
+  .discover_dot {
+    bottom: 10px;
+    left: 10px;
+  }
+  .discover_dot .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  footer .footer_end {
+    flex-direction: column-reverse;
+    padding-bottom: 10px;
+  }
+  footer .footer_end .social {
+    margin-bottom: 12px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

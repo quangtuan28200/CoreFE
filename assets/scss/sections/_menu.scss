@@ -47,6 +47,14 @@
                 object-fit: cover;
                 width: 100%;
             }
+
+            .img-rightTop{
+                p{
+                    span{
+                        width: 60%;
+                    }
+                }
+            }
         }
     }
 
@@ -101,6 +109,7 @@
                         img{
                             height: 271px;
                             object-fit: contain;
+                            width: 100%;
                         }
                     }
                     &_title{
