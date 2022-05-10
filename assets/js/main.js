@@ -12,9 +12,9 @@ jQuery(document).ready(function ($) {
     });
 
     // slider
-    // setInterval(function () {
-    //     moveRight();
-    // }, 2000);
+    setInterval(function () {
+        moveRight();
+    }, 2000);
 
     const slideWidth = $(".discover_slider").width() / 3;
     const countSlideItem = $(".discover_slider li").length;
@@ -22,6 +22,8 @@ jQuery(document).ready(function ($) {
     for (let index = 0; index < countSlideItem; index++) {
         $(".discover_dot").append($("<li>").addClass("dot"));
     }
+
+    $(".discover_dot li:first-child").addClass("active");
 
     function moveRight() {
         $(".discover_slider").animate(
@@ -34,7 +36,19 @@ jQuery(document).ready(function ($) {
                     ".discover_slider"
                 );
                 $(".discover_slider").css("left", "");
+                $(".discover_dot li:last-child").prependTo(".discover_dot");
             }
         );
     }
+
+    //handle date
+    var d = new Date();
+    var strDate =
+        d.getFullYear() +
+        "-" +
+        (d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : d.getMonth() + 1) +
+        "-" +
+        (d.getDate() < 10 ? `0${d.getDate()}` : d.getDate());
+
+    $(".contact_form input[type=date]").val(strDate);
 });

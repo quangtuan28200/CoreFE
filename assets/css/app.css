@@ -732,7 +732,7 @@ header.active {
   margin-right: 8px;
   transition: 0.2s;
 }
-.discover_dot .dot .active {
+.discover_dot .dot.active {
   background-color: #ffc045;
 }
 .discover_title {
@@ -825,23 +825,44 @@ header.active {
 .contact_form {
   margin-right: -160px;
 }
+.contact_form li {
+  position: relative;
+  margin-bottom: 28px;
+}
+.contact_form label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+  color: #ccc;
+  user-select: none;
+  pointer-events: none;
+  transition: 0.2s;
+  font-weight: 500;
+}
 .contact_form input {
   padding-left: 24px;
+  padding-right: 16px;
   display: block;
   border-radius: 5px;
-  border: 1px solid #bebebe;
-  margin-bottom: 28px;
+  border: none;
   width: 100%;
   height: 65px;
   outline: none;
   font-size: 16px;
+  background-color: #eee;
+  border-bottom: 5px solid transparent;
+  transition: 0.2s;
 }
-.contact_form input::placeholder {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #3d3d3d;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
+.contact_form input:focus, .contact_form input:not(:placeholder-shown) {
+  border-bottom: 5px solid #3d2514;
+  background-color: white;
+  box-shadow: 0 0 20px #ddd;
+}
+.contact_form input:focus ~ label, .contact_form input:not(:placeholder-shown) ~ label {
+  left: 15px;
+  top: -22%;
+  color: #3d2514;
 }
 .contact_form input[type=submit] {
   font-family: "Alfa Slab One";
@@ -853,6 +874,25 @@ header.active {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+.contact_form input[type=date]::-webkit-calendar-picker-indicator, .contact_form input[type=time]::-webkit-calendar-picker-indicator {
+  background-color: transparent;
+  color: transparent;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+.contact_form input[type=date]::-webkit-datetime-edit {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3d2514;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
 }
 
 /*# sourceMappingURL=app.css.map */
