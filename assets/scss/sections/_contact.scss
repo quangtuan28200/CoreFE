@@ -72,7 +72,7 @@
         margin-right: -160px;
         li{
             position: relative;
-            margin-bottom: 28px;
+            margin-bottom: 34px;
         }
 
         label{   
@@ -92,25 +92,18 @@
             padding-right: 16px;
             display: block;
             border-radius: 5px;
-            border: none;
             width: 100%;
             height: 65px;
             outline: none;
+            font-family: "Roboto", sans-serif;
             font-size: $text-size;
-            background-color: #eee;
-            border-bottom: 5px solid transparent;
-            transition: .2s;
+            font-weight: 500;
+            color: $primary-color;
+            border: 1px solid #bebebe;
 
-
-            &:focus, &:not(:placeholder-shown){
-                border-bottom: 5px solid $primary-color;
-                background-color: white;
-                box-shadow: 0 0 20px #ddd;
-            }
-
-            &:focus ~ label, &:not(:placeholder-shown) ~ label{
-                left: 15px;
-                top: -22%;
+            &::placeholder{
+                font-weight: 500;
+                text-transform: uppercase;
                 color: $primary-color;
             }
 
@@ -123,12 +116,14 @@
                 border-radius: 4px;
                 border: none;
                 padding:  0;
+            }
+
+            &#date, &#time, &[type=submit]{
                 cursor: pointer;
             }
 
-            &[type=date]::-webkit-calendar-picker-indicator, &[type=time]::-webkit-calendar-picker-indicator{
-                background-color: transparent;
-                color: transparent;
+            &[type=date]::-webkit-calendar-picker-indicator, 
+            &[type=time]::-webkit-calendar-picker-indicator{
                 position: absolute;
                 opacity: 0;
                 top: 0;
@@ -137,14 +132,11 @@
                 bottom: 0;
                 width: auto;
                 height: auto;
+                cursor: pointer;
             }
 
             &[type=date]::-webkit-datetime-edit{
-                font-size: 16px;
-                font-weight: 500;
-                color: $primary-color;
-                font-family: "Roboto", sans-serif;
-                user-select: none;
+                text-transform: uppercase;
             }
         }
     }
