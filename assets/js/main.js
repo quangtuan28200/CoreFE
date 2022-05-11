@@ -27,8 +27,15 @@ jQuery(document).ready(function ($) {
         moveRight();
     }, 2000);
 
-    const slideWidth = $(".discover_slider").width() / 3;
+    const sildeUlWidth = $(".discover_slider").width();
+    const slideWidth = sildeUlWidth / 3;
     const countSlideItem = $(".discover_slider li").length;
+
+    $(".discover_container").css({ width: slideWidth });
+
+    $(".discover_slider").css({ width: sildeUlWidth, marginLeft: -slideWidth });
+
+    $(".discover_slider li:last-child").prependTo(".discover_slider");
 
     for (let index = 0; index < countSlideItem; index++) {
         $(".discover_dot").append($("<li>").addClass("dot"));

@@ -5,9 +5,9 @@
 
 @include responsive ('ipad-vertical'){
     .home{
-        
         &_title{
             margin-left: 50px;
+            margin-bottom: 50px;
         }
         &_img{
             &Wrap{
@@ -130,12 +130,8 @@
 }
 
 @include responsive ('phone'){
-    .shadow{
-        bottom: 60px;
-    }
-
     html{
-        font-size: 30%;
+        font-size: 42%;
     }
 
     .nav{
@@ -147,7 +143,7 @@
     }
 
     #home{
-        padding-top: 30px;
+        padding-top: 60px;
     }
 
     .home{
@@ -156,6 +152,9 @@
         }
 
         &_img{
+            &Wrap{
+                font-size: 1.4vw;
+            }
             &-end{
                 margin-left: 0;
                 img{
@@ -185,13 +184,9 @@
 }
 
 @include responsive ('phone-mini'){
-    // .shadow{
-    //     bottom: 60px;
-    // }
-
-    // html{
-    //     font-size: 30%;
-    // }
+    html{
+        font-size: 38%;
+    }
 
     // .nav{
     //     display: block;

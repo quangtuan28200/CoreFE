@@ -10,6 +10,7 @@
 }
 
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -42,6 +43,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ol, ul {
@@ -71,10 +73,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 body {
@@ -124,7 +122,7 @@ section {
   transform: translateX(-50%);
 }
 .shadow.white {
-  width: 80%;
+  width: 60%;
   height: 60%;
   top: 136px;
   box-shadow: 0px -130px 150px rgba(255, 255, 255, 0.45);
@@ -235,7 +233,7 @@ section {
 }
 .nav-content ul li a {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 10px 22px 10px 15px;
   width: 100%;
@@ -531,7 +529,7 @@ header.active {
   margin-bottom: 4.8rem;
 }
 .footer_des {
-  line-height: 25px;
+  line-height: 2.5rem;
   width: 460px;
 }
 .footer_right {
@@ -594,7 +592,7 @@ header.active {
 #home {
   background: linear-gradient(rgba(255, 192, 69, 0.9), rgba(255, 192, 69, 0.9)), url("../imgs/Rectangle.png");
   background-position: center;
-  padding-top: 21rem;
+  padding-top: 27rem;
 }
 
 .home_title-top {
@@ -605,7 +603,7 @@ header.active {
   border: 2px dashed #3d2514;
   display: inline-block;
   margin-bottom: 2.4rem;
-  margin-top: 7.5rem;
+  margin-top: 1.3rem;
   letter-spacing: -1px;
 }
 .home_title-mid {
@@ -623,51 +621,55 @@ header.active {
   text-transform: uppercase;
   text-shadow: 4px 5px 0 #fee8bc;
 }
-.home_img {
-  display: flex;
-}
 .home_imgWrap {
   position: relative;
   width: 100%;
   margin-left: -40px;
+  display: flex;
+  font-size: 1rem;
 }
 .home_img-top {
   z-index: 1;
-  position: absolute;
-  bottom: 13.2rem;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 13.2em;
 }
 .home_img-top img {
-  width: 30.4rem;
+  width: 30.4em;
 }
 .home_img-mid {
   z-index: 2;
-  position: absolute;
-  bottom: 4rem;
-  left: 12.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 3.9em;
+  left: -17.4em;
 }
 .home_img-mid img {
-  width: 42.5rem;
+  width: 42.5em;
 }
 .home_img-end {
   z-index: 1;
   position: relative;
-  margin-left: 44.6rem;
-  margin-bottom: 5.4rem;
+  bottom: 5.4em;
+  left: -28em;
 }
 .home_img-end img {
-  width: 17rem;
+  width: 17em;
 }
 .home_img-price {
   z-index: 3;
-  width: 17.4rem;
-  height: 17.4rem;
+  width: 17.4em;
+  height: 17.4em;
   background-color: #bf2222;
   position: absolute;
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  padding: 1rem;
+  padding: 1em;
 }
 .home_img-price .price-wrap {
   width: 100%;
@@ -680,16 +682,16 @@ header.active {
   align-items: center;
 }
 .home_img-price .price-wrap p {
-  font-size: 6rem;
+  font-size: 6em;
   color: white;
   font-weight: 400;
   text-transform: uppercase;
 }
 .home_img-price .price-wrap p span {
-  font-size: 3rem;
+  font-size: 0.5em;
 }
 .home_img-price .price-wrap .text {
-  font-size: 4.4rem;
+  font-size: 4.4em;
 }
 
 .menu_img {
@@ -989,6 +991,7 @@ header.active {
 @media screen and (max-width: 768px) {
   .home_title {
     margin-left: 50px;
+    margin-bottom: 50px;
   }
   .home_imgWrap {
     margin-left: 50px;
@@ -1083,12 +1086,8 @@ header.active {
 /*Tablet nhỏ(480 x 640)*/
 /*Iphone(480 x 640)*/
 @media screen and (max-width: 428px) {
-  .shadow {
-    bottom: 60px;
-  }
-
   html {
-    font-size: 30%;
+    font-size: 42%;
   }
 
   .nav {
@@ -1100,11 +1099,14 @@ header.active {
   }
 
   #home {
-    padding-top: 30px;
+    padding-top: 60px;
   }
 
   .home_title, .home_imgWrap {
     margin-left: 0;
+  }
+  .home_imgWrap {
+    font-size: 1.4vw;
   }
   .home_img-end {
     margin-left: 0;
@@ -1129,5 +1131,10 @@ header.active {
 /*Tablet nhỏ(480 x 640)*/
 /*Iphone(480 x 640)*/
 /*Smart phone nhỏ*/
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 38%;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
