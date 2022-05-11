@@ -5,11 +5,14 @@
 
 @include responsive ('ipad-vertical'){
     .home{
+        
         &_title{
             margin-left: 50px;
         }
         &_img{
-            margin-left: 64px;
+            &Wrap{
+                margin-left: 50px;
+            }
         }
     }
 
@@ -148,7 +151,7 @@
     }
 
     .home{
-        &_title, &_img{
+        &_title, &_imgWrap{
             margin-left: 0;
         }
 
