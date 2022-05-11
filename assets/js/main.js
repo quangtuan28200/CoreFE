@@ -53,13 +53,15 @@ jQuery(document).ready(function ($) {
     }
 
     //handle date
-    // var d = new Date();
-    // var strDate =
-    //     d.getFullYear() +
-    //     "-" +
-    //     (d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : d.getMonth() + 1) +
-    //     "-" +
-    //     (d.getDate() < 10 ? `0${d.getDate()}` : d.getDate());
+    var d = new Date();
+    var strDate =
+        d.getFullYear() +
+        "-" +
+        (d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : d.getMonth() + 1) +
+        "-" +
+        (d.getDate() < 10 ? `0${d.getDate()}` : d.getDate());
+
+    $(".contact_form input#date").val(strDate);
 
     // $(".contact_form input#date").focus(function (e) {
     //     e.preventDefault();

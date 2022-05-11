@@ -73,15 +73,19 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   line-height: 1;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   color: #3d2514;
 }
 
 section {
-  padding-bottom: 80px;
+  padding-bottom: 8rem;
 }
 
 .d-flex {
@@ -165,10 +169,12 @@ section {
 .nav input:checked ~ .header_sm .nav__btn .nav__icon::before {
   top: 0;
   transform: translate(-50%, 0) rotate(45deg);
+  background-color: #fff;
 }
 .nav input:checked ~ .header_sm .nav__btn .nav__icon::after {
   top: 0;
   transform: translate(-50%, 0) rotate(-45deg);
+  background-color: #fff;
 }
 .nav input:checked ~ .nav__bg {
   display: block;
@@ -229,7 +235,7 @@ section {
 }
 .nav-content ul li a {
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 10px 22px 10px 15px;
   width: 100%;
@@ -495,7 +501,7 @@ header.active {
   transform: translateY(-10px);
 }
 .header_top .delivery img {
-  width: 41px;
+  width: 4rem;
 }
 .header_top .delivery p {
   font-weight: 700;
@@ -518,11 +524,11 @@ header.active {
   background-color: rgba(0, 0, 0, 0.99);
 }
 .footer_content {
-  padding-top: 84px;
-  padding-bottom: 172px;
+  padding-top: 8.4rem;
+  padding-bottom: 17rem;
 }
 .footer_left img {
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
 }
 .footer_des {
   line-height: 25px;
@@ -537,14 +543,14 @@ header.active {
   display: inline-block;
 }
 .footer_rightIcon {
-  height: 24px;
-  width: 24px;
+  height: 2.4rem;
+  width: 2.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer_rightIcon i {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 .footer_right .address, .footer_right .email {
   display: flex;
@@ -559,10 +565,10 @@ header.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 22px;
+  padding-bottom: 2.2rem;
 }
 .footer_end .coppyright {
-  font-size: 12px;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 .footer_end .social {
@@ -572,8 +578,8 @@ header.active {
   margin-left: 12px;
 }
 .footer_end .social_icon a {
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   background-color: white;
   border-radius: 50%;
   display: flex;
@@ -582,82 +588,85 @@ header.active {
 }
 .footer_end .social_icon a i {
   color: #3d2514;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 #home {
   background: linear-gradient(rgba(255, 192, 69, 0.9), rgba(255, 192, 69, 0.9)), url("../imgs/Rectangle.png");
   background-position: center;
-  padding-top: 213px;
+  padding-top: 21rem;
 }
 
 .home_title-top {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
-  padding: 15px;
+  padding: 1.5rem;
   text-transform: uppercase;
   border: 2px dashed #3d2514;
   display: inline-block;
-  margin-bottom: 24px;
-  margin-top: 75px;
+  margin-bottom: 2.4rem;
+  margin-top: 7.5rem;
   letter-spacing: -1px;
 }
 .home_title-mid {
   font-family: "Alfa Slab One", cursive;
-  font-size: 90px;
+  font-size: 9rem;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 27px;
+  margin-bottom: 2.7rem;
   text-shadow: 4px 5px 0 #fee8bc;
 }
 .home_title-end {
   font-family: "Alfa Slab One", cursive;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: 400;
   text-transform: uppercase;
   text-shadow: 4px 5px 0 #fee8bc;
 }
 .home_img {
   display: flex;
+}
+.home_imgWrap {
   position: relative;
+  width: 100%;
 }
 .home_img-top {
   z-index: 1;
   position: absolute;
-  bottom: 132px;
+  bottom: 13.2rem;
   left: 0;
 }
 .home_img-top img {
-  width: 304px;
+  width: 30.4rem;
 }
 .home_img-mid {
   z-index: 2;
   position: absolute;
-  bottom: 39px;
-  left: 128px;
+  bottom: 4rem;
+  left: 12.8rem;
 }
 .home_img-mid img {
-  width: 425px;
+  width: 42.5rem;
 }
 .home_img-end {
   z-index: 1;
   position: relative;
-  margin-left: 446px;
-  margin-bottom: 54px;
+  margin-left: 44.6rem;
+  margin-bottom: 5.4rem;
 }
 .home_img-end img {
-  width: 172px;
+  width: 17rem;
 }
 .home_img-price {
   z-index: 3;
-  width: 174px;
-  height: 174px;
+  width: 17.4rem;
+  height: 17.4rem;
   background-color: #bf2222;
   position: absolute;
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  padding: 10px;
+  padding: 1rem;
 }
 .home_img-price .price-wrap {
   width: 100%;
@@ -670,16 +679,16 @@ header.active {
   align-items: center;
 }
 .home_img-price .price-wrap p {
-  font-size: 60px;
+  font-size: 6rem;
   color: white;
   font-weight: 400;
   text-transform: uppercase;
 }
 .home_img-price .price-wrap p span {
-  font-size: 30px;
+  font-size: 3rem;
 }
 .home_img-price .price-wrap .text {
-  font-size: 44px;
+  font-size: 4.4rem;
 }
 
 .menu_img {
@@ -694,18 +703,18 @@ header.active {
 }
 .menu_img-title {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 3rem;
+  left: 3rem;
 }
 .menu_img-title p {
   display: grid;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: white;
   font-weight: 400;
   text-transform: uppercase;
 }
 .menu_img-title p span {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
   margin-top: 4px;
 }
@@ -730,34 +739,34 @@ header.active {
 .menu_btn {
   display: flex;
   justify-content: center;
+  margin-top: 7rem;
 }
 .menu_btn p {
   display: inline-block;
-  padding: 14px 22px;
+  padding: 1.4rem 2.2rem;
   background-color: #ffc045;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
-  margin-top: 70px;
 }
 .menu_orderTitle p {
   font-family: "Alfa Slab One";
-  font-size: 40px;
+  font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
-  margin: 40px 0;
+  margin: 4rem 0;
 }
 .menu_orderDes {
   display: flex;
   justify-content: center;
 }
 .menu_orderDes p {
-  width: 1055px;
+  width: 80%;
   text-align: center;
   line-height: 1.4;
-  font-size: 18px;
-  margin-bottom: 65px;
+  font-size: 1.8rem;
+  margin-bottom: 6.5rem;
 }
 .menu_orderBurger li {
   display: flex;
@@ -765,36 +774,37 @@ header.active {
   align-items: center;
 }
 .menu_orderBurger li .burger_img {
-  margin-bottom: 71px;
+  margin-bottom: 7rem;
   position: relative;
 }
 .menu_orderBurger li .burger_img img {
-  height: 271px;
+  height: 27rem;
   object-fit: contain;
   width: 100%;
 }
 .menu_orderBurger li .burger_title p {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 2.3rem;
 }
 .menu_orderBurger li .burger_des p {
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 3.6rem;
 }
 .menu_orderBurger li .burger_btn p {
   font-family: "Alfa Slab One";
   text-transform: uppercase;
+  font-size: 1.6rem;
   color: white;
-  padding: 22px 38px;
+  padding: 2.2rem 3.8rem;
   background-color: #bf2222;
   display: inline-block;
 }
 
 #discover {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .discover_container {
@@ -808,17 +818,17 @@ header.active {
   position: relative;
 }
 .discover_slider li {
-  padding: 25px;
+  padding: 2.5rem;
 }
 .discover_dot {
   display: flex;
   position: absolute;
-  bottom: 60px;
-  left: 56px;
+  bottom: 6rem;
+  left: 5.6rem;
 }
 .discover_dot .dot {
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   background-color: #dcdcdc;
   border-radius: 50%;
   margin-right: 8px;
@@ -828,11 +838,11 @@ header.active {
   background-color: #ffc045;
 }
 .discover_title {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   margin-left: 31px;
 }
 .discover_title p {
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
   display: grid;
@@ -840,14 +850,14 @@ header.active {
 .discover_title p span {
   font-family: "Alfa Slab One";
   font-weight: 400;
-  font-size: 34px;
+  font-size: 3.4rem;
   text-transform: uppercase;
   margin-top: 8px;
 }
 .discover_des {
-  font-size: 18px;
-  line-height: 33.33px;
-  margin-left: 31px;
+  font-size: 1.8rem;
+  line-height: 3.333rem;
+  margin-left: 3rem;
 }
 .discover_right img {
   width: 100%;
@@ -868,7 +878,7 @@ header.active {
 .contact_header {
   display: flex;
   align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 9rem;
 }
 .contact_header > img {
   width: 213px;
@@ -880,15 +890,15 @@ header.active {
   width: 100%;
 }
 .contact_subTitle {
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 23px;
+  margin-bottom: 2.3rem;
 }
 .contact_title {
   font-family: "Alfa Slab One";
-  font-size: 40px;
+  font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -919,29 +929,18 @@ header.active {
 }
 .contact_form li {
   position: relative;
-  margin-bottom: 24px;
-}
-.contact_form label {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 40px;
-  color: #ccc;
-  user-select: none;
-  pointer-events: none;
-  transition: 0.2s;
-  font-weight: 500;
+  margin-bottom: 2.4rem;
 }
 .contact_form input {
-  padding-left: 24px;
-  padding-right: 16px;
+  padding-left: 2.4rem;
+  padding-right: 1.6rem;
   display: block;
   border-radius: 5px;
   width: 100%;
-  height: 65px;
+  height: 6.5rem;
   outline: none;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #3d2514;
   border: 1px solid #bebebe;
@@ -954,7 +953,7 @@ header.active {
 .contact_form input[type=submit] {
   font-family: "Alfa Slab One";
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white;
   background-color: #bf2222;
   border-radius: 4px;
@@ -999,7 +998,7 @@ header.active {
   }
 
   .menu_img {
-    padding: 50px 0;
+    padding: 5rem 0;
     padding-bottom: 0;
   }
   .menu_img-left img, .menu_img-right img {
@@ -1009,8 +1008,6 @@ header.active {
     width: unset;
   }
   .menu_img-title {
-    top: 16px;
-    left: 16px;
     width: 40%;
   }
   .menu_img-title p span {
@@ -1019,9 +1016,6 @@ header.active {
   .menu_img a {
     margin-bottom: 10px;
   }
-  .menu_btn p {
-    margin-top: 36px;
-  }
   .menu_orderDes p {
     width: 90%;
   }
@@ -1029,30 +1023,14 @@ header.active {
     margin-bottom: 40px;
   }
 
-  #discover {
-    margin-top: 0;
-  }
-
-  .discover_slider li {
-    padding: 16px;
-  }
   .discover_title {
     margin-top: 0;
     margin-left: 0;
-    margin-bottom: 30px;
     text-align: center;
   }
   .discover_des {
     margin-left: 0;
     margin-bottom: 20px;
-  }
-  .discover_dot {
-    bottom: 40px;
-    left: 40px;
-  }
-  .discover_dot .dot {
-    width: 14px;
-    height: 14px;
   }
 
   .contact_header > img {
@@ -1084,6 +1062,9 @@ header.active {
   footer .footer_left img {
     width: 80%;
   }
+  footer .footer_right {
+    justify-content: unset;
+  }
   footer .footer_right .address p, footer .footer_right .email p {
     margin-left: 8px;
   }
@@ -1100,13 +1081,15 @@ header.active {
 /*Ipad dọc(768 x 1024)*/
 /*Tablet nhỏ(480 x 640)*/
 /*Iphone(480 x 640)*/
-/*Smart phone nhỏ*/
-/*Ipad ngang(1024 x 768)*/
-/*Ipad dọc(768 x 1024)*/
-/*Tablet nhỏ(480 x 640)*/
-/*Iphone(480 x 640)*/
-/*Smart phone nhỏ*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 428px) {
+  .shadow {
+    bottom: 60px;
+  }
+
+  html {
+    font-size: 30%;
+  }
+
   .nav {
     display: block;
   }
@@ -1115,29 +1098,35 @@ header.active {
     display: none;
   }
 
+  #home {
+    padding-top: 30px;
+  }
+
+  .home_title, .home_img {
+    margin-left: 0;
+  }
+  .home_img-end {
+    margin-left: 0;
+  }
+  .home_img-end img {
+    margin-left: auto;
+  }
+
+  .menu_img-left img, .menu_img-right img {
+    height: 150px;
+  }
   .menu_orderBurger li {
     margin-bottom: 10px;
   }
-
-  .discover_slider li {
-    padding: 4px;
-  }
-  .discover_dot {
-    bottom: 10px;
-    left: 10px;
-  }
-  .discover_dot .dot {
-    width: 8px;
-    height: 8px;
-  }
-
-  footer .footer_end {
-    flex-direction: column-reverse;
-    padding-bottom: 10px;
-  }
-  footer .footer_end .social {
-    margin-bottom: 12px;
+  .menu_orderDes p {
+    width: 100%;
   }
 }
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
 
 /*# sourceMappingURL=app.css.map */

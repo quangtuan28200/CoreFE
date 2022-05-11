@@ -12,17 +12,17 @@
 
         &-title{
             position: absolute;
-            top: 30px;
-            left: 30px;
+            top: 3rem;
+            left: 3rem;
             p{
                 display: grid;
-                font-size: 16px;
+                font-size: $text-size;
                 color: white;
                 font-weight: 400;
                 text-transform: uppercase;
 
                 span{
-                    font-size: 24px;
+                    font-size: 2.4rem;
                     font-weight: 500;
                     margin-top: 4px;
                 }
@@ -61,15 +61,15 @@
     &_btn{
         display: flex;
         justify-content: center;
+        margin-top: 7rem;
         p{
             display: inline-block;
-            padding: 14px 22px;
+            padding: 1.4rem 2.2rem;
             background-color: $primary-colorLight;
-            font-size: 18px;
+            font-size: 1.8rem;
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing: -1px;
-            margin-top: 70px;
         }
     }
 
@@ -77,10 +77,10 @@
         &Title{
             p{
                 font-family: "Alfa Slab One";
-                font-size: 40px;
+                font-size: 4rem;
                 text-transform: uppercase;
                 text-align: center;
-                margin: 40px 0;
+                margin: 4rem 0;
             }
         }
 
@@ -88,11 +88,11 @@
             display: flex;
             justify-content: center;
             p{
-                width: 1055px;
+                width: 80%;
                 text-align: center;
                 line-height: 1.4;
-                font-size: 18px;
-                margin-bottom: 65px;    
+                font-size: 1.8rem;
+                margin-bottom: 6.5rem;    
             }
         }
 
@@ -104,35 +104,36 @@
 
                 .burger{
                     &_img{
-                        margin-bottom: 71px;
+                        margin-bottom: 7rem;
                         position: relative;
                         img{
-                            height: 271px;
+                            height: 27rem;
                             object-fit: contain;
                             width: 100%;
                         }
                     }
                     &_title{
                         p{
-                            font-size: 28px;
+                            font-size: 2.8rem;
                             font-weight: 700;
                             text-transform: uppercase;
-                            margin-bottom: 23px;
+                            margin-bottom: 2.3rem;
                         }
                     }
                     &_des{
                         p{
-                            font-size: 18px;
+                            font-size: 1.8rem;
                             text-align: center;
-                            margin-bottom: 36px;
+                            margin-bottom: 3.6rem;
                         }
                     }
                     &_btn{
                         p{
                             font-family: "Alfa Slab One";
                             text-transform: uppercase;
+                            font-size: $text-size;
                             color: white;
-                            padding: 22px 38px;
+                            padding: 2.2rem 3.8rem;
                             background-color: #bf2222;
                             display: inline-block;
                         }

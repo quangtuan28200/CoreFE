@@ -19,7 +19,7 @@
 
     .menu{
         &_img{
-            padding: 50px 0;
+            padding: 5rem 0;
             padding-bottom: 0;
 
             &-left, &-right{
@@ -35,8 +35,6 @@
             }
 
             &-title{
-                top: 16px;
-                left: 16px;
                 width: 40%;
                 p span{
                     width: unset;      
@@ -48,56 +46,25 @@
             }
         }
 
-        &_btn{
-            p{
-                margin-top: 36px;
-            }
+        &_orderDes p{
+            width: 90%;      
         }
 
-        &_orderDes{
-            p{
-                width: 90%;
-            }
+        &_orderBurger li{         
+            margin-bottom: 40px;
         }
-
-        &_orderBurger{
-            li{
-                margin-bottom: 40px;
-            }
-        }
-    }
-
-    #discover{
-        margin-top: 0;
     }
 
     .discover{
-        &_slider{
-            li{
-                padding: 16px;
-            }
-        }
-
         &_title{
             margin-top: 0;
             margin-left: 0;
-            margin-bottom: 30px;
             text-align: center;
         }
 
         &_des{
             margin-left: 0;
             margin-bottom: 20px;
-        }
-
-        &_dot{
-            bottom: 40px;
-            left: 40px;
-
-            .dot{
-                width: 14px;
-                height: 14px;
-            }
         }
     }
 
@@ -139,13 +106,12 @@
                 width: unset;
             }
 
-            &_left{
-                img{
-                    width: 80%;
-                }
+            &_left img{       
+                width: 80%;
             }
 
             &_right{
+                justify-content: unset;
                 .address, .email{
                     p{
                         margin-left: 8px;
@@ -161,67 +127,111 @@
 }
 
 @include responsive ('phone'){
+    .shadow{
+        bottom: 60px;
+    }
 
-}
+    html{
+        font-size: 30%;
+    }
 
-@include responsive ('phone-mini'){
     .nav{
         display: block;
     }
 
     header{
         display: none;
-        // &_top{
-        //     .logo{
-        //         img{
-        //             width: 45%;
-        //         }
-        //     }
-        //     .delivery{
-        //         display: none;
-        //     }
-        // }
-
-        // &_nav{
-        //     display: none;
-        // }
     }
 
-    .menu{
-        &_orderBurger{
-            li{
-                margin-bottom: 10px;
-            }
-        }
+    #home{
+        padding-top: 30px;
     }
 
-    .discover{
-        &_slider{
-            li{
-                padding: 4px;
-            }
+    .home{
+        &_title, &_img{
+            margin-left: 0;
         }
 
-        &_dot{
-            bottom: 10px;
-            left: 10px;
-
-            .dot{
-                width: 8px;
-                height: 8px;
-            }
-        }
-    }
-
-    footer{
-        .footer{
-            &_end{
-                flex-direction: column-reverse;
-                padding-bottom: 10px;
-                .social{
-                    margin-bottom: 12px;
+        &_img{
+            &-end{
+                margin-left: 0;
+                img{
+                    margin-left: auto;
                 }
             }
         }
     }
+
+    .menu{
+        &_img{
+            &-left, &-right{
+                img{
+                    height: 150px;
+                }
+            }
+        }
+
+        &_orderBurger li{
+            margin-bottom: 10px;
+        }
+
+        &_orderDes p{
+            width: 100%;      
+        }
+    }
+}
+
+@include responsive ('phone-mini'){
+    // .shadow{
+    //     bottom: 60px;
+    // }
+
+    // html{
+    //     font-size: 30%;
+    // }
+
+    // .nav{
+    //     display: block;
+    // }
+
+    // header{
+    //     display: none;
+    // }
+
+    // #home{
+    //     padding-top: 30px;
+    // }
+
+    // .home{
+    //     &_title, &_img{
+    //         margin-left: 0;
+    //     }
+
+    //     &_img{
+    //         &-end{
+    //             margin-left: 0;
+    //             img{
+    //                 margin-left: auto;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // .menu{
+    //     &_img{
+    //         &-left, &-right{
+    //             img{
+    //                 height: 150px;
+    //             }
+    //         }
+    //     }
+
+    //     &_orderBurger li{
+    //         margin-bottom: 10px;
+    //     }
+
+    //     &_orderDes p{
+    //         width: 100%;      
+    //     }
+    // }
 }

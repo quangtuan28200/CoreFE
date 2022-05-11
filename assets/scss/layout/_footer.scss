@@ -9,15 +9,13 @@
     }
 
     &_content{
-        padding-top: 84px;
-        padding-bottom: 172px;
+        padding-top: 8.4rem;
+        padding-bottom: 17rem;
     }
 
     &_left{
         img{
-            // width: 410px;
-            // filter: invert(95%) sepia(0%) saturate(20%) hue-rotate(34deg) brightness(104%) contrast(108%);
-            margin-bottom: 48px;
+            margin-bottom: 4.8rem;
         }
     }
 
@@ -35,14 +33,14 @@
         }
 
         &Icon{
-            height: 24px;
-            width: 24px;
+            height: 2.4rem;
+            width: 2.4rem;
             display: flex;
             justify-content: center;
             align-items: center;
 
             i{
-                font-size: 22px;
+                font-size: 2.2rem;
             }
         }
         .address, .email{
@@ -60,9 +58,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 22px;
+        padding-bottom: 2.2rem;
         .coppyright{
-            font-size: 12px;
+            font-size: 1.2rem;
             text-transform: uppercase;
         }
 
@@ -71,8 +69,8 @@
             &_icon{
                 margin-left: 12px;
                 a{
-                    height: 30px;
-                    width: 30px;
+                    height: 3rem;
+                    width: 3rem;
                     background-color: white;
                     border-radius: 50%;
                     display: flex;
@@ -81,7 +79,7 @@
 
                     i{
                         color: $primary-color;
-                        font-size: 18px;
+                        font-size: 1.8rem;
                     }
                 }
             }
