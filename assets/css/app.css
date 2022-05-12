@@ -815,6 +815,9 @@ header.active {
 
 .discover_container {
   box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+  padding: 2.5rem;
+}
+.discover_container .slider {
   overflow: hidden;
   position: relative;
 }
@@ -822,9 +825,7 @@ header.active {
   display: flex;
   width: 300%;
   position: relative;
-}
-.discover_slider li {
-  padding: 2.5rem;
+  margin-left: -100%;
 }
 .discover_dot {
   display: flex;

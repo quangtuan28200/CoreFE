@@ -5,18 +5,19 @@
 .discover{
     &_container{
         box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
-        overflow: hidden;
-        position: relative;
+        padding: 2.5rem;
+
+        .slider{
+            overflow: hidden;
+            position: relative;
+        }
     }
 
     &_slider{
         display: flex;
         width: 300%;
-        // margin-left: -100%;
         position: relative;
-        li{
-            padding: 2.5rem;
-        }
+        margin-left: -100%;
     }
 
     &_dot{
